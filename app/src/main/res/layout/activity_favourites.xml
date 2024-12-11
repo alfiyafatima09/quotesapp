@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F3F4F6">
+
+    <!-- Title at the Top -->
+    <TextView
+        android:id="@+id/favouritesTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Favourite Quotes"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#512DA8"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- ListView for displaying favourites -->
+    <ListView
+        android:id="@+id/favouritesListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#E0E0E0"
+        android:dividerHeight="1dp" />
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back to Home"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#512DA8"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>
